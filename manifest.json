@@ -1,0 +1,32 @@
+{
+
+    "manifest_version": 2,
+    "name": "Secrate Talks",
+    "version": "1.0",
+  
+    "description": "I am a Meassage Encrypter and Decrypter",
+  
+    "icons": {
+      "48": "ico/Bones.ico"
+    },
+  
+    "browser_action": {
+      "default_icon": "ico/Bones.ico",
+      "default_title": "I Encrypt",
+      "default_popup": "popup/popup/popup.html"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.mozilla.org/*","*://*.github.com/*"],
+        "js": ["borderify.js"]
+      }
+    ],
+    "commands": {
+      "_execute_browser_action": {
+          "suggested_key": {
+              "default": "Alt+Shift+M"
+          }
+      }
+}
+}  
