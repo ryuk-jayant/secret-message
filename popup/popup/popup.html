@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="popup.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="popup.css" />
     <title>Task/Note Taker</title>
-</head>
-<body style="background-color:slateblue;border:aqua;">
-    <h3>Hi there i am An Encryptr</h3>
-    <p>you can add</p>
-    <textarea id="text" placeholder="hi enter your message"></textarea>
-    <button id="btn">Click here to Encrypt!!</button>
-    <p id="para" >//</p>
-    <textarea id="cipher" placeholder="hi enter your encrypted message"></textarea>
-    <button id="btn2">Click here to Decrypt!!</button>
-    <p id="answer" >//</p>
+  </head>
+  <body style="background-color: rgb(121, 101, 252); border: aqua">
+    <h3 class="front-tital">Hi there i am An Encryptr</h3>
+    <div class="parent-div">
+      <textarea id="text" placeholder="hi enter your message"></textarea>
+      <input type="number" name="" id="enccode" placeholder="enter your code..">
+      <button id="btn">Click here to Encrypt!!</button>
+    </div>
+    <div class="copy-div">
+    <p id="para">//</p>
+    <p id="copy-message">/</p>
+    </div> 
+    <div class="parent-div">
+      <textarea
+        id="cipher"
+        placeholder="hi enter your encrypted message"
+      ></textarea>
+      <input type="number" name="" id="deccode" placeholder="enter your code..">
+      <button id="btn2">Click here to Decrypt!!</button>
+    </div>
+    <p id="answer">//</p>
+    <!-- <button>Copy </button> -->
     <script src="popup.js"></script>
-    <script src="popup2.js"></script><!--this is to handel decrypter-->
-</body>
+    <script src="popup2.js"></script>
+    <!--this is to handel decrypter-->
+  </body>
 </html>

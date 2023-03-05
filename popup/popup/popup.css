@@ -1,3 +1,26 @@
 body{
-    width:500px;
+    width:auto;
+    height: auto;
+}
+.front-tital{
+    font-size: xx-large;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color:black;
+}
+
+.parent-div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.copy-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.para{
+    object-position: center;
+}
+.answer{
+    object-position: center;
 }
