@@ -6,6 +6,11 @@
   
     "description": "I am a Meassage Encrypter and Decrypter",
   
+    "browser_specific_settings": {
+      "gecko": {
+          "id": "naruto.kira101@gmail.com"
+         }
+    },
     "icons": {
       "48": "ico/Bones.ico"
     },
